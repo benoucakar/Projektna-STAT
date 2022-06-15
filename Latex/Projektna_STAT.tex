@@ -66,7 +66,7 @@ To znamo narediti na vsaj dva načina.
 Spomnimo se, da pričakovana vrednost geometrijske porazdelitve $\Geom(p)$ znaša $\frac{1}{p}$.
 Zato velja
 \[p = \frac{1}{E(K)}.\]
-Po metodi momentov $\E(K)$ ocenimo z 
+Po metodi momentov $\E(K)$ ocenimo s prvim momentom opaženih vrednosti 
 \[\frac{1}{N} \sum_{k=1}^{12} k S_k = \frac{S}{N},\]
 kar nam da cenilko
 \[\hat{p} = \frac{N}{S}.\]
@@ -83,6 +83,38 @@ Ko logaritmiramo, dobimo
 V obeh primerih pridemo do iste cenilke.
 Ta v našem primeru znaša 
 \[\hat{p} = \frac{130}{363} \approx 0.358.\]
+Teorija metode momentov in metode največjega verjetja nam zagotovita, da je ta izbira smiselna.
+Iskana geometrijska porazdelitev je $\Geom(\hat{p})$.
+
+\subsection{Primer (b)}
+
+Ob predpostavki, da je $K \sim \Geom(\hat{p})$, poračunamo verjetnosti $p_k$, da pri enem opažanju pride do $k$ skokov.
+Pričakovano vrednosti frekvenc določimo kot
+\[\hat{S}_k = p_kS.\]
+Dobimo spodnjo tabelo.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    $k$ & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
+    $p_k$ & 0.3580 & 0.2298 & 0.1476 & 0.0947 & 0.0608 & 0.0390  \\ \hline
+    $\hat{S}_k$ & 46.54 & 29.87 & 19.19 & 12.31 & 7.90 & 5.07 \\ \hline
+    $k$ & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline
+    $p_k$ & 0.0251 & 0.0161 & 0.0103 & 0.0066 & 0.0043 & 0.0027 \\ \hline
+    $\hat{S}_k$ & 3.26 & 2.09 & 1.34 & 0.86 & 0.56 & 0.35 \\ \hline
+\end{tabular}
+\caption{Pričakovane frekvence skokov.}
+\label{PricakovaneFreq}
+\end{table}
+
+Te podatke združimo v črtni grafikon.
+
+
+\subsection{Primer (c)}
+
+
+
+
 
 
 
