@@ -58,3 +58,5 @@ enst_vrzc_S_dohodek4 = list(map(int, list(S_cetrt.sample(100, replace=False, ran
 enst_vrzc_S_dohodek5 = list(map(int, list(S_cetrt.sample(100, replace=False, random_state=2).DOHODEK)))
 
 vzorci2 = [enst_vrzc_S_dohodek, enst_vrzc_S_dohodek2, enst_vrzc_S_dohodek3, enst_vrzc_S_dohodek4, enst_vrzc_S_dohodek5]
+
+# Test
