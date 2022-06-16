@@ -1,30 +1,31 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-pd.options.display.max_rows = 20
-
-kibergrad = pd.read_csv('naloga/Kibergrad.csv', names=['TIP', 'CLANOV', 'OTROK', 'DOHODEK', 'CETRT', 'IZOBRAZBA'])
+oznake = ['TIP', 'CLANOV', 'OTROK', 'DOHODEK', 'CETRT', 'IZOBRAZBA']
+n = 100
+kibergrad = pd.read_csv('naloga/Kibergrad.csv', names=oznake)
 S_cetrt = kibergrad[kibergrad.CETRT == "1"]
 V_cetrt = kibergrad[kibergrad.CETRT == "2"]
 J_cetrt = kibergrad[kibergrad.CETRT == "3"]
 Z_cetrt = kibergrad[kibergrad.CETRT == "4"]
+    
+# ----------------- (a) naloga ----------------- #
 
-# ----------------- a) naloga ----------------- #
-
-enst_vrzc_S_dohodek = list(map(int, list(S_cetrt.sample(100, replace=False, random_state=2).DOHODEK)))
-enst_vrzc_V_dohodek = list(map(int,list(V_cetrt.sample(100, replace=False, random_state=2).DOHODEK)))
-enst_vrzc_J_dohodek = list(map(int,list(J_cetrt.sample(100, replace=False, random_state=2).DOHODEK)))
-enst_vrzc_Z_dohodek = list(map(int,list(Z_cetrt.sample(100, replace=False, random_state=2).DOHODEK)))
+seed = 2
+enst_vrzc_S_dohodek = list(map(int, list(S_cetrt.sample(n, replace=False, random_state=seed).DOHODEK)))
+enst_vrzc_V_dohodek = list(map(int,list(V_cetrt.sample(n, replace=False, random_state=seed).DOHODEK)))
+enst_vrzc_J_dohodek = list(map(int,list(J_cetrt.sample(n, replace=False, random_state=seed).DOHODEK)))
+enst_vrzc_Z_dohodek = list(map(int,list(Z_cetrt.sample(n, replace=False, random_state=seed).DOHODEK)))
 
 vzorci1 = [enst_vrzc_S_dohodek, enst_vrzc_V_dohodek, enst_vrzc_J_dohodek, enst_vrzc_Z_dohodek]
 
-fig = plt.figure(figsize =(15, 10))
+fig = plt.figure(figsize =(8., 6.))
 ax1 = fig.add_subplot(111)
-bp1 = ax1.boxplot(vzorci1, patch_artist = True, vert = False)
+bp1 = ax1.boxplot(vzorci1, patch_artist = True, vert = True)
 
 # Vodoravne črte
-ax1.xaxis.grid(True, linestyle='-', which='major', color='lightgrey', alpha=0.25)
-ax1.set(axisbelow=True, title="Dohodki po četrtih", xlabel='Dohodki')
+ax1.yaxis.grid(True, linestyle='-', which='major', color='lightgrey', alpha=0.25)
+ax1.set(axisbelow=True, title="Dohodki po četrtih", ylabel='Dohodki')
 
 # Barve škatl
 colors = ['#EF476F', '#FFD166', '#06D6A0', '#118AB2']
@@ -45,7 +46,7 @@ for flier in bp1['fliers']:
     flier.set(marker ='o', color ='#073B4C')
      
 # Oznake za x-os
-ax1.set_yticklabels(['Severna četrt', 'Vzhodna četrt', 'Južna četrt', 'Zahodna četrt'])
+ax1.set_xticklabels(['Severna četrt', 'Vzhodna četrt', 'Južna četrt', 'Zahodna četrt'])
 
 # Prikaz grafa
 plt.show()
