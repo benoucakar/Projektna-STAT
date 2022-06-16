@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1655390031 "c:/Users/benou/Documents/FMF/3. letnik/STAT/Projektna-STAT/Latex/Projektna_STAT.tex" "Projektna_STAT.pdf" "Projektna_STAT" 1655390033
+["pdflatex"] 1655408792 "c:/Users/benou/Documents/FMF/3. letnik/STAT/Projektna-STAT/Latex/Projektna_STAT.tex" "Projektna_STAT.pdf" "Projektna_STAT" 1655408794
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc" 1254938640 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc" 1254938640 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc" 1254938640 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -31,6 +31,7 @@
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb" 1254938640 116908 9a7a12d1e4df280ea0ab4aad83cdef88 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb" 1254938640 23055 2e5b42921de910eaa97b85df04ca4891 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb" 1254938640 30388 702fae6a5f0e6e9c48a1d872b442ffcf ""
+  "C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb" 1254938640 31113 04b711c9a4c7f8cb4ed784c6fc4cc1c5 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb" 1254938640 30635 833ec815d446ec453a4913fc26d24cbc ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb" 1254938640 119235 05e5c8d6d60439433e50047898c2c0e0 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb" 1254938640 113634 9384aebdf26f9881e046a4b5574566db ""
@@ -82,11 +83,12 @@
   "C:/Users/benou/AppData/Roaming/MiKTeX/2.9/tex/latex/listings/lstmisc.sty" 1623004942 77022 ee25ce086f4a79d8cf73bac6f94c02a5 ""
   "C:/Users/benou/AppData/Roaming/MiKTeX/2.9/tex/latex/pythonhighlight/pythonhighlight.sty" 1486646478 4900 3e3ef6513daecbdc80ef326918df2377 ""
   "C:/Users/benou/AppData/Roaming/MiKTeX/2.9/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "Projektna_STAT.aux" 1655390033 746 6c831216ac4dfec510cfb9ea294902f3 "pdflatex"
-  "Projektna_STAT.tex" 1655390029 5892 2350dceaf7ac8aa4b91f7346fa6ddffc ""
+  "Projektna_STAT.aux" 1655408794 893 793582f952d7ed889729ae8eff11417e "pdflatex"
+  "Projektna_STAT.tex" 1655408790 7409 bc67da23adabcbe0d51370a6ad87f593 ""
   "Slike//Skatle_z_brki_Cetrti.png" 1655388600 31975 03f58359f4261a2dec6a7fddcc1800ea ""
-  "c:/Users/benou/Documents/FMF/3. letnik/STAT/Projektna-STAT/Latex/Projektna_STAT.tex" 1655390029 5892 2350dceaf7ac8aa4b91f7346fa6ddffc ""
+  "Slike//Skatle_z_brki_Sever.png" 1655404332 25755 03d0a2219dee2e0eaaac86278ff05204 ""
+  "c:/Users/benou/Documents/FMF/3. letnik/STAT/Projektna-STAT/Latex/Projektna_STAT.tex" 1655408790 7409 bc67da23adabcbe0d51370a6ad87f593 ""
   (generated)
-  "Projektna_STAT.pdf"
-  "Projektna_STAT.aux"
   "Projektna_STAT.log"
+  "Projektna_STAT.aux"
+  "Projektna_STAT.pdf"

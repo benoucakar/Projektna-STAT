@@ -372,6 +372,13 @@ INPUT .\Slike\\Skatle_z_brki_Cetrti.png
 INPUT .\Slike\\Skatle_z_brki_Cetrti.png
 INPUT .\Slike\\Skatle_z_brki_Cetrti.png
 INPUT C:\Users\benou\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT .\Slike\\Skatle_z_brki_Sever.png
+INPUT .\Slike\\Skatle_z_brki_Sever.png
+INPUT Slike\\Skatle_z_brki_Sever.png
+INPUT .\Slike\\Skatle_z_brki_Sever.png
+INPUT .\Slike\\Skatle_z_brki_Sever.png
+INPUT .\Slike\\Skatle_z_brki_Sever.png
+INPUT .\Slike\\Skatle_z_brki_Sever.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT .\Slike\\Črtni_grafikon.png
 INPUT .\Slike\\Črtni_grafikon.png
@@ -383,15 +390,17 @@ INPUT .\Slike\\Črtni_grafikon.png
 INPUT Projektna_STAT.aux
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
+INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-rm.enc
-INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmex10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmex10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi6.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
