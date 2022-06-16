@@ -4,6 +4,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{amsmath, amsthm, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pythonhighlight}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -14,8 +17,11 @@
 \DeclareMathOperator{\PP}{P}
 \DeclareMathOperator{\var}{var}
 \DeclareMathOperator{\Geom}{Geom}
+\DeclareMathOperator{\NegBin}{NegBin}
 \DeclareMathOperator{\Lver}{L}
 \DeclareMathOperator{\lver}{l}
+
+\graphicspath{{./Slike/}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -31,18 +37,40 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - 1. naloga - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section*{1. naloga}
+
+\subsection*{Primer (a)}
+
+V programu Python najprej uvozimo podatke in ločimo četrti.
+Nato iz vsake četrti izberemo slučajni vzorec velikosti $100$.
+Narišemo vzporedne škatle z brki za dohodke po četrtih.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Skatle_z_brki_Cetrti.png}
+    \caption{Škatle z brki za dohodke po četrtih.}
+\end{figure}
+
+Opazimo, da je variacija dohodkov v severni in zahodni četrti nekoliko višja kot v vzhodni in južni četrti. 
+Razberemo lahko, da je v povprečju dohodki v Severni četrti malenkost višji na podlagi največjega tretjega kvartila. 
+Južna četrt ima največ osamelcev, dohodki večine pa so sicer izmed vseh četrti najnižji.
+
+Glede na to da smo iz vsake četrti izbrali zgol $100$ vzorcev, populacija četrti pa je v povprečju $10.000$, ti podatki niso ravno reprezentativni.
+Tu ne moremo sklepati prav veliko.
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - 2. naloga - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{2. naloga}
+\section*{2. naloga}
 
-\subsection{Primer (a)}
+\subsection*{Primer (a)}
 
 Najprej uvedimo nekaj oznak. 
 Če je $k \in \set{1, \ldots, 12}$ število skokov ptic, naj bo $S_k$ frekvenca tega opažanja.
 Podatke z novimi oznakami predstavimo v spodnji tabeli.
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
     \hline
@@ -58,7 +86,7 @@ Velja
 V našem primeru znaša $N = 130$ in $S = 363$.
 
 Želimo poiskati geometrijsko porazdelitev, ki se najbolje prilega tem podatkom. 
-Če je število skokov posameznega ptiča slučajna spremenljivka $K \sim \Geom(p)$, 
+Če je število skokov pri posameznem opažanju slučajna spremenljivka $K \sim \Geom(p)$, 
 v resnici iščemo cenilko za parameter $p$.
 To znamo narediti na vsaj dva načina.
 
@@ -86,13 +114,13 @@ Ta v našem primeru znaša
 Teorija metode momentov in metode največjega verjetja nam zagotovita, da je ta izbira smiselna.
 Iskana geometrijska porazdelitev je $\Geom(\hat{p})$.
 
-\subsection{Primer (b)}
+\subsection*{Primer (b)}
 
 Ob predpostavki, da je $K \sim \Geom(\hat{p})$, poračunamo verjetnosti $p_k$, da pri enem opažanju pride do $k$ skokov.
 Pričakovano vrednosti frekvenc določimo kot
-\[\hat{S}_k = p_kS.\]
+\[\hat{S}_k = p_k N.\]
 Dobimo spodnjo tabelo.
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
@@ -106,14 +134,23 @@ Dobimo spodnjo tabelo.
 \caption{Pričakovane frekvence skokov.}
 \label{PricakovaneFreq}
 \end{table}
+Te podatke združimo v spodnji črtni grafikon.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{Črtni_grafikon.png}
+    \caption{Črtni grafikon opaženih in pričakovanih prekvenc.}
+\end{figure}
 
-Te podatke združimo v črtni grafikon.
 
+\subsection*{Primer (c)}
 
-\subsection{Primer (c)}
-
-
-
+Izračunati moramo pričakovano vrednost naše cenilke.
+Naj bo $K_i \sim \Geom(p)$ število skokov pri $i$-tem opažanju. Opazimo, da je
+\[S = \sum_{i=1}^N K_i.\]
+Če predpostavimo, da so spremenljivke $K_1, K_2, \ldots, K_N$ med sabo neodvisne, 
+je slučajna spremenljivka $S$ porazdeljena negativno binomsko $\NegBin(N,p)$.
+Računamo.
+\[E(\hat{p}) = E(\frac{N}{S}) = \sum_{k=N}^{\infty} \frac{N}{k} \binom{k-1}{N-1}p^N(1-p)^{N-k}\]  
 
 
 
