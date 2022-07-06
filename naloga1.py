@@ -4,20 +4,12 @@ import pandas as pd
 oznake = ['TIP', 'CLANOV', 'OTROK', 'DOHODEK', 'CETRT', 'IZOBRAZBA']
 n = 100
 kibergrad = pd.read_csv('naloga/Kibergrad.csv', names=oznake)
-S_cetrt = kibergrad[kibergrad.CETRT == "1"]
-V_cetrt = kibergrad[kibergrad.CETRT == "2"]
-J_cetrt = kibergrad[kibergrad.CETRT == "3"]
-Z_cetrt = kibergrad[kibergrad.CETRT == "4"]
-    
+cetrti = [kibergrad[kibergrad.CETRT == str(i)] for i in range(1,5)]
+
 # ----------------- (a) naloga ----------------- #
 
 seed = 2
-enst_vrzc_S_dohodek = list(map(int, list(S_cetrt.sample(n, replace=False, random_state=seed).DOHODEK)))
-enst_vrzc_V_dohodek = list(map(int,list(V_cetrt.sample(n, replace=False, random_state=seed).DOHODEK)))
-enst_vrzc_J_dohodek = list(map(int,list(J_cetrt.sample(n, replace=False, random_state=seed).DOHODEK)))
-enst_vrzc_Z_dohodek = list(map(int,list(Z_cetrt.sample(n, replace=False, random_state=seed).DOHODEK)))
-
-vzorci1 = [enst_vrzc_S_dohodek, enst_vrzc_V_dohodek, enst_vrzc_J_dohodek, enst_vrzc_Z_dohodek]
+vzorci1 = [list(map(int, list(cetrti[i].sample(n, replace=False, random_state=seed).DOHODEK))) for i in range(4)]
 
 fig = plt.figure(figsize =(8, 6))
 ax1 = fig.add_subplot(111)
@@ -49,13 +41,13 @@ for flier in bp1['fliers']:
 ax1.set_xticklabels(['Severna četrt', 'Vzhodna četrt', 'Južna četrt', 'Zahodna četrt'])
 
 # Prikaz grafa
-plt.show()
+#plt.show()
 
-# ----------------- b) naloga ----------------- #
+# ----------------- (b) naloga ----------------- #
 
-vzorci2 = [enst_vrzc_S_dohodek]
+vzorci2 = vzorci1[:1]
 for i in range(4):
-    vzorci2.append(list(map(int, list(S_cetrt.sample(100, replace=False, random_state=(i+10)).DOHODEK))))
+    vzorci2.append(list(map(int, list(cetrti[0].sample(100, replace=False, random_state=(i+10)).DOHODEK))))
 
 fig = plt.figure(figsize =(8, 6))
 ax2 = fig.add_subplot(111)
@@ -84,6 +76,17 @@ for flier in bp2['fliers']:
     flier.set(marker ='o', color ='#073B4C')
      
 # Prikaz grafa
-plt.show()
+#plt.show()
 
+# ----------------- (c) naloga ----------------- #
+
+N = 43886
+Ni = [10149, 10390, 13457, 9890]
+wi = [x/N for x in Ni]
+mui = [np.mean(list(map(int, list(cetrt.DOHODEK)))) for cetrt in cetrti]
+mu = sum(wi[i]*mui[i] for i in range(4))
+vari = [np.var(list(map(int, list(cetrt.DOHODEK)))) for cetrt in cetrti]
+
+poj_var = sum([wi[i]*(mui[i] - mu)**2 for i in range(4)]) # 9252922.604388494
+nepoj_var = sum([wi[i]*vari[i] for i in range(4)]) # 1017132747.285994
 

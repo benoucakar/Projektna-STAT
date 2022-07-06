@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.27)  16 JUN 2022 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.27)  6 JUL 2022 17:17
 entering extended mode
 **"c:/Users/benou/Documents/FMF/3. letnik/STAT/Projektna-STAT/Latex/Projektna_STAT.tex"
 (c:/Users/benou/Documents/FMF/3. letnik/STAT/Projektna-STAT/Latex/Projektna_STAT.tex
@@ -175,174 +175,138 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box52
 \@float@everytoks=\toks31
 \@floatcapt=\box53
-) (C:\Users\benou\AppData\Roaming\MiKTeX\2.9\tex/latex/pythonhighlight\pythonhighlight.sty
-Package: pythonhighlight 2017/02/09 python code highlighting; provided by Olivier Verdier <olivier.verdier@gmail.com>
- (C:\Users\benou\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\listings.sty
-\lst@mode=\count271
-\lst@gtempboxa=\box54
-\lst@token=\toks32
-\lst@length=\count272
-\lst@currlwidth=\dimen151
-\lst@column=\count273
-\lst@pos=\count274
-\lst@lostspace=\dimen152
-\lst@width=\dimen153
-\lst@newlines=\count275
-\lst@lineno=\count276
-\lst@maxwidth=\dimen154
- (C:\Users\benou\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count277
-\lst@skipnumbers=\count278
-\lst@framebox=\box55
-) (C:\Users\benou\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
-))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (C:\Users\benou\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 28.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 27.
  (C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (C:\Users\benou\AppData\Roaming\MiKTeX\2.9\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count279
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count271
+\l__pdf_internal_box=\box54
 ) (Projektna_STAT.aux)
 \openout1 = `Projektna_STAT.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
  (C:\Users\benou\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count280
-\scratchdimen=\dimen155
-\scratchbox=\box57
-\nofMPsegments=\count281
-\nofMParguments=\count282
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count283
-\MPscratchDim=\dimen156
-\MPnumerator=\count284
-\makeMPintoPDFobject=\count285
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count272
+\scratchdimen=\dimen151
+\scratchbox=\box55
+\nofMPsegments=\count273
+\nofMParguments=\count274
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count275
+\MPscratchDim=\dimen152
+\MPnumerator=\count276
+\makeMPintoPDFobject=\count277
+\everyMPtoPDFconversion=\toks33
 ) (C:\Users\benou\AppData\Roaming\MiKTeX\2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count286
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 36.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 35.
  (C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 36.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 35.
  (C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 36.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 35.
  (C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 36.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 35.
  (C:\Program Files\MiKTeX 2.9\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 36.
+(Font)              <12> on input line 35.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 36.
+(Font)              <8> on input line 35.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 36.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+(Font)              <6> on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 44.
+ (C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 45.
+(Font)              <10.95> on input line 49.
 <./Slike//Skatle_z_brki_Cetrti.png, id=1, 578.16pt x 433.62pt>
 File: ./Slike//Skatle_z_brki_Cetrti.png Graphic file (type png)
 <use ./Slike//Skatle_z_brki_Cetrti.png>
-Package pdftex.def Info: ./Slike//Skatle_z_brki_Cetrti.png  used on input line 50.
+Package pdftex.def Info: ./Slike//Skatle_z_brki_Cetrti.png  used on input line 59.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-Overfull \hbox (44.70924pt too wide) in paragraph at lines 50--51
+Overfull \hbox (44.70924pt too wide) in paragraph at lines 59--60
  [][] 
  []
 
 [1
 
-{C:/Users/benou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Slike//Skatle_z_brki_Cetrti.png>]
-<./Slike//Skatle_z_brki_Sever.png, id=13, 578.16pt x 433.62pt>
+{C:/Users/benou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<./Slike//Skatle_z_brki_Sever.png, id=15, 578.16pt x 433.62pt>
 File: ./Slike//Skatle_z_brki_Sever.png Graphic file (type png)
 <use ./Slike//Skatle_z_brki_Sever.png>
-Package pdftex.def Info: ./Slike//Skatle_z_brki_Sever.png  used on input line 65.
+Package pdftex.def Info: ./Slike//Skatle_z_brki_Sever.png  used on input line 83.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-Overfull \hbox (44.70924pt too wide) in paragraph at lines 65--66
+Overfull \hbox (44.70924pt too wide) in paragraph at lines 83--84
  [][] 
  []
 
-[2 <./Slike//Skatle_z_brki_Sever.png>] [3]
-<./Slike//Črtni_grafikon.png, id=28, 462.528pt x 346.896pt>
+[2 <./Slike//Skatle_z_brki_Cetrti.png>] [3 <./Slike//Skatle_z_brki_Sever.png>] [4]
+<./Slike//Črtni_grafikon.png, id=33, 462.528pt x 346.896pt>
 File: ./Slike//Črtni_grafikon.png Graphic file (type png)
 <use ./Slike//Črtni_grafikon.png>
-Package pdftex.def Info: ./Slike//Črtni_grafikon.png  used on input line 163.
+Package pdftex.def Info: ./Slike//Črtni_grafikon.png  used on input line 179.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
-Overfull \hbox (10.02289pt too wide) in paragraph at lines 163--164
+Overfull \hbox (10.02289pt too wide) in paragraph at lines 179--180
  [][] 
  []
 
-[4]
-Overfull \hbox (1.29771pt too wide) in paragraph at lines 170--172
+[5]
+Overfull \hbox (1.29771pt too wide) in paragraph at lines 186--188
 \T1/lmr/m/n/10.95 Izra�unati mo-ramo pri-�a-ko-vano vre-dnost na�e ce-nilke. Naj bo $\OML/lmm/m/it/10.95 K[] \OMS/lmsy/m/n/10.95  []\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 p\OT1/lmr/m/n/10.95 )$
  []
 
-[5 <./Slike//Črtni_grafikon.png>] (Projektna_STAT.aux) ) 
+[6 <./Slike//Črtni_grafikon.png>] (Projektna_STAT.aux) ) 
 Here is how much of TeX's memory you used:
- 5747 strings out of 478873
- 82168 string characters out of 2858414
- 406061 words of memory out of 3000000
- 23558 multiletter control sequences out of 15000+600000
- 443034 words of font info for 57 fonts, out of 8000000 for 9000
+ 3928 strings out of 478873
+ 57134 string characters out of 2858414
+ 368584 words of memory out of 3000000
+ 21756 multiletter control sequences out of 15000+600000
+ 446348 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,66p,511b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Projektna_STAT.pdf (5 pages, 262731 bytes).
+ 57i,12n,66p,298b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Projektna_STAT.pdf (6 pages, 302241 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
