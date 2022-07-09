@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.27)  9 JUL 2022 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.27)  9 JUL 2022 22:05
 entering extended mode
 **"c:/Users/benou/Documents/FMF/3. letnik/STAT/Projektna-STAT/Latex/Projektna_STAT.tex"
 (c:/Users/benou/Documents/FMF/3. letnik/STAT/Projektna-STAT/Latex/Projektna_STAT.tex
@@ -257,13 +257,23 @@ Overfull \hbox (7.91895pt too wide) in paragraph at lines 52--52
 []    \T1/lmtt/m/n/10.95 Pojasnjeni standardni odklon dohodka med £etrtmi zna²a 3042.[] 
  []
 
+
+Overfull \hbox (2.17021pt too wide) in paragraph at lines 52--52
+[]    \T1/lmtt/m/n/10.95 Povpre£ni dohodki zna²ajo 45759 v severni, 41235 v vzhodni,[] 
+ []
+
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 55.
 <./Slike//Skatle_z_brki_Cetrti.png, id=1, 578.16pt x 433.62pt>
 File: ./Slike//Skatle_z_brki_Cetrti.png Graphic file (type png)
 <use ./Slike//Skatle_z_brki_Cetrti.png>
 Package pdftex.def Info: ./Slike//Skatle_z_brki_Cetrti.png  used on input line 65.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
+(pdftex.def)             Requested size: 375.79955pt x 281.84966pt.
+
+Overfull \hbox (15.79955pt too wide) in paragraph at lines 65--66
+ [][] 
+ []
+
 [1
 
 {C:/Users/benou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -271,42 +281,47 @@ Package pdftex.def Info: ./Slike//Skatle_z_brki_Cetrti.png  used on input line 6
 File: ./Slike//Skatle_z_brki_Sever.png Graphic file (type png)
 <use ./Slike//Skatle_z_brki_Sever.png>
 Package pdftex.def Info: ./Slike//Skatle_z_brki_Sever.png  used on input line 89.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [2 <./Slike//Skatle_z_brki_Cetrti.png>] [3 <./Slike//Skatle_z_brki_Sever.png>] [4]
-<./Slike//ÄŒrtni_grafikon.png, id=34, 462.528pt x 346.896pt>
-File: ./Slike//ÄŒrtni_grafikon.png Graphic file (type png)
-<use ./Slike//ÄŒrtni_grafikon.png>
-Package pdftex.def Info: ./Slike//ÄŒrtni_grafikon.png  used on input line 186.
-(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+(pdftex.def)             Requested size: 375.79955pt x 281.84966pt.
 
-Overfull \hbox (10.02289pt too wide) in paragraph at lines 186--187
+Overfull \hbox (15.79955pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
-[5]
-Overfull \hbox (1.29771pt too wide) in paragraph at lines 193--195
-\T1/lmr/m/n/10.95 Izra£unati mo-ramo pri-£a-ko-vano vre-dnost na²e ce-nilke. Naj bo $\OML/lmm/m/it/10.95 K[] \OMS/lmsy/m/n/10.95  []\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 p\OT1/lmr/m/n/10.95 )$
+[2 <./Slike//Skatle_z_brki_Cetrti.png>] [3 <./Slike//Skatle_z_brki_Sever.png>] [4]
+<./Slike//ÄŒrtni_grafikon.png, id=33, 462.528pt x 346.896pt>
+File: ./Slike//ÄŒrtni_grafikon.png Graphic file (type png)
+<use ./Slike//ÄŒrtni_grafikon.png>
+Package pdftex.def Info: ./Slike//ÄŒrtni_grafikon.png  used on input line 197.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+ [5] [6 <./Slike//ÄŒrtni_grafikon.png>]
+Overfull \hbox (6.50893pt too wide) in paragraph at lines 228--231
+\T1/lmr/m/n/10.95 S po-mo-£jo pro-grama \T1/lmr/bx/n/10.95 na-loga2.py \T1/lmr/m/n/10.95 po-novno iz-ra-£u-namo pri-£a-ko-vane fre-kvence.
  []
 
-[6 <./Slike//ÄŒrtni_grafikon.png>]
-<./Slike//Histogram.png, id=42, 462.528pt x 346.896pt>
+<./Slike//ÄŒrtni_grafikon2.png, id=42, 462.528pt x 346.896pt>
+File: ./Slike//ÄŒrtni_grafikon2.png Graphic file (type png)
+<use ./Slike//ÄŒrtni_grafikon2.png>
+Package pdftex.def Info: ./Slike//ÄŒrtni_grafikon2.png  used on input line 234.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+[7] [8 <./Slike//ÄŒrtni_grafikon2.png>]
+<./Slike//Histogram.png, id=51, 462.528pt x 346.896pt>
 File: ./Slike//Histogram.png Graphic file (type png)
 <use ./Slike//Histogram.png>
-Package pdftex.def Info: ./Slike//Histogram.png  used on input line 254.
+Package pdftex.def Info: ./Slike//Histogram.png  used on input line 294.
 (pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
- [7] [8 <./Slike//Histogram.png>] [9] (Projektna_STAT.aux) ) 
+ [9] [10 <./Slike//Histogram.png>] [11] (Projektna_STAT.aux) ) 
 Here is how much of TeX's memory you used:
- 3946 strings out of 478873
- 57423 string characters out of 2858414
- 368639 words of memory out of 3000000
- 21771 multiletter control sequences out of 15000+600000
+ 3956 strings out of 478873
+ 57706 string characters out of 2858414
+ 368658 words of memory out of 3000000
+ 21780 multiletter control sequences out of 15000+600000
  452328 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,66p,298b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,12n,66p,304b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Projektna_STAT.pdf (9 pages, 343521 bytes).
+Output written on Projektna_STAT.pdf (11 pages, 381358 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

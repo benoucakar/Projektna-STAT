@@ -47,7 +47,7 @@ Ta generira škatle z brki in za zadnji del naloge vrne:
     S četrtmi pojasnjena varianca dohodka družin Kibergrada
     znaša 9252923, residualna varianca pa znaša 1017132747.
     Pojasnjeni standardni odklon dohodka med četrtmi znaša 3042.
-    Povprečni dohodki znaša 45759 v severni, 41235 v vzhodni,
+    Povprečni dohodki znašajo 45759 v severni, 41235 v vzhodni,
     37473 v južni in 42158 v zahodni četrti.
 \end{verbatim}
 
@@ -62,7 +62,7 @@ Na podlagi teh vzorcev narišemo škatle z brki za dohodke po četrtih, ki so pr
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{Skatle_z_brki_Cetrti.png}
+    \includegraphics[scale=0.65]{Skatle_z_brki_Cetrti.png}
     \caption{Škatle z brki za dohodke po četrtih.}
     \label{brke_po_cetrtih}
 \end{figure}
@@ -70,8 +70,8 @@ Na podlagi teh vzorcev narišemo škatle z brki za dohodke po četrtih, ki so pr
 Najprej naredimo nekaj splošnih opazk.
 Opazimo, da je variacija dohodkov znotraj severne in zahodne četrti nekoliko višja kot v vzhodni in južni četrti. 
 Ker so prvi, drugi in tretji kvartil ter maksimum v severni četriti izmed vseh četrti največji, 
-sklepamo, da je v povprečju dohodki v Severni četrti malenkost višji od ostalih. 
-V vzhodni in južni četrti je porazdelitev nekoliko nagnjena k večjim dohodkom. 
+sklepamo, da so v povprečju dohodki v severni četrti malenkost višji od ostalih. 
+V vzhodni in južni četrti je porazdelitev nekoliko nagnjena k višjim dohodkom. 
 Južna četrt ima največ osamelcev, dohodki pa so izmed vseh četrti najmanj razpršeni.
 
 Na podlagi opaženega, sklepamo, da so dohodki v severni četrti nekoliko višji kot v ostalih.
@@ -86,7 +86,7 @@ Tudi za te vzorce narišemo škatle z brki prikazane na sliki~\ref{brke_sever}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{Skatle_z_brki_Sever.png}
+    \includegraphics[scale=0.65]{Skatle_z_brki_Sever.png}
     \caption{Škatle z brki za dohodke v severni četrti.}
     \label{brke_sever}
 \end{figure}
@@ -103,7 +103,7 @@ $\mu$ povprečni dohodek in $\sigma^2$ varianca dohodka celotne populacije ter $
 Pojasnjeno in nepojasnjeno varianco pri stratificiranem vzorčenju lahko izrazimo kot
 \[\sigma^2_p = \sum_{i=1}^4 w_i \mu_i^2 - \mu^2 \qquad \sigma^2_n = \sum_{i=1}^4 w_i \sigma_i^2.\]
 
-Programa \textbf{naloga1.py} vrne, da pojasnjena varianca znaša $9.252.923$, nepojasnjena varianca pa znaša $1.017.132.747$.
+Program \textbf{naloga1.py} vrne, da pojasnjena varianca znaša $9.252.923$, nepojasnjena varianca pa znaša $1.017.132.747$.
 Pojasnjeni standardni odklon dohodka med četrtmi znaša $3.042$, kar je malo v primerjavi s povprečnimi dohodki četrti,
 ki znšajo $45.759$ v severni, $41.235$ v vzhodni, $37.473$ v južni in $42.158$ v zahodni četrti.
 To potrjuje hipotezo, da je razlika povprečnega dohodka družine med četrtmi majhna.
@@ -111,6 +111,15 @@ To potrjuje hipotezo, da je razlika povprečnega dohodka družine med četrtmi m
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - 2. naloga - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{2. naloga}
+
+Nalogo rešujemo s pomočjo programa \textbf{naloga2.py}. 
+Ta generira črtne grafikone in vrne naslednje podatke:
+\begin{verbatim}
+    Cenilka za parameter geometrijske 
+    porazdelitve znaša 0.358.
+    Nepristranska cenilka za parameter geometrijske 
+    porazdelitve znaša 0.356.
+\end{verbatim}
 
 \subsection*{Primer (a)}
 
@@ -124,7 +133,7 @@ Podatke z novimi oznakami predstavimo v spodnji tabeli.
     $k$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline
     $S_k$ & 48 & 31 & 20 & 9 & 6 & 5 & 4 & 2 & 1 & 1 & 2 & 1 \\ \hline
     \end{tabular}
-    \caption{Frekvence števila skokov}
+    \caption{Frekvence števila skokov.}
     \label{freq}
 \end{table}
 \noindent Skupno število opaženih skokov označimo z $S$, število vseh opažanj pa z $N$.
@@ -133,14 +142,15 @@ Velja
 V našem primeru znaša $N = 130$ in $S = 363$.
 
 Želimo poiskati geometrijsko porazdelitev, ki se najbolje prilega tem podatkom. 
-Če je število skokov pri posameznem opažanju slučajna spremenljivka $K \sim \Geom(p)$, 
-iščemo cenilko za parameter $p$. To znamo narediti na vsaj dva načina.
+Naj bo število skokov pri $i$-tem opažanju slučajna spremenljivka $K_i \sim \Geom(p)$
+in predpostavimo, da so spremenljivke $K_i$ med sabo neodvisne.
+Iščemo cenilko za parameter $p$. To znamo narediti na vsaj dva načina.
 
 \emph{Prvi način:} Postopamo po metodi momentov. 
 Spomnimo se, da pričakovana vrednost geometrijske porazdelitve $\Geom(p)$ znaša $\frac{1}{p}$.
 Zato velja
 \[p = \frac{1}{\E(K)}.\]
-Po metodi momentov $\E(K)$ ocenimo s prvim momentom opaženih vrednosti 
+Po metodi momentov ocenimo $\E(K)$ s prvim momentom opaženih vrednosti 
 \[\frac{1}{N} \sum_{k=1}^{12} k S_k = \frac{S}{N},\]
 kar nam da cenilko
 \[\hat{p} = \frac{N}{S}.\]
@@ -148,22 +158,21 @@ kar nam da cenilko
 \emph{Drugi način:} Postopamo po metodi največjega verjetja.
 Verjetnostna funkcija geometrijske porazdelitve $\Geom(p)$ je $\PP(K=k) = p(1-p)^{k-1}$.
 Verjetje lahko torej izrazimo kot 
-\[\Lver(p \mid S_1, \ldots, S_{12}) = p^N (1-p)^{S - N}.\]
+\[\Lver(p \mid K_1, \ldots, K_N) = p^N (1-p)^{S - N}.\]
 Ko logaritmiramo, dobimo 
-\[\lver(p \mid S_1, \ldots, S_{12}) = N \ln(\frac{p}{1-p}) + S \ln(1-p).\]
-Če parcialno odvajamo po $p$ in malo računamo, ponovno pridemo do cenilke
+\[\lver(p \mid K_1, \ldots, K_N) = N \ln(p) + (S-N) \ln(1-p).\]
+Če izraz odvajamo po $p$, enačimo z $0$ in malo računamo, ponovno pridemo do cenilke
 \[\hat{p} = \frac{N}{S}.\]
 
 V obeh primerih pridemo do iste cenilke.
 Ta v našem primeru znaša 
 \[\hat{p} = \frac{130}{363} \approx 0,358.\]
-Teorija metode momentov in metode največjega verjetja nam zagotovita, da je ta izbira smiselna.
 Iskana geometrijska porazdelitev je $\Geom(\hat{p})$.
 
 \subsection*{Primer (b)}
 
-Ob predpostavki, da je $K \sim \Geom(\hat{p})$, poračunamo verjetnosti $p_k$, da pri enem opažanju pride do $k$ skokov.
-Pričakovano vrednosti frekvenc določimo kot
+Ob predpostavki, da so $K_i \sim \Geom(\hat{p})$, poračunamo verjetnosti $p_k$, da pri enem opažanju pride do $k$ skokov.
+Pričakovano vrednosti frekvenc določimo s pomočjo programa \textbf{naloga2.py} po predpisu
 \[\hat{S}_k = p_k N.\]
 Dobimo spodnjo tabelo.
 \begin{table}[H]
@@ -180,25 +189,53 @@ Dobimo spodnjo tabelo.
 \caption{Pričakovane frekvence skokov.}
 \label{PricakovaneFreq}
 \end{table}
-Te podatke združimo v spodnji črtni grafikon.
+
+\noindent Te podatke združimo v črtni grafikon prikazan na sliki~\ref{crtni_graf1}.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.8]{Črtni_grafikon.png}
-    \caption{Črtni grafikon opaženih in pričakovanih prekvenc.}
+    \includegraphics[scale=0.7]{Črtni_grafikon.png}
+    \caption{Črtni grafikon opaženih in pričakovanih frekvenc.}
+    \label{crtni_graf1}
 \end{figure}
 
+Zdi se, da se pričakovane frekvence se dobro prilegajo opaženim. Ponekod pride do odstopanja, 
+ki pa je lahko posledica dejstva, da pričakovane frekvence $\hat{S}_k$ niso cela števila.
 
 \subsection*{Primer (c)}
 
-Izračunati moramo pričakovano vrednost naše cenilke.
-Naj bo $K_i \sim \Geom(p)$ število skokov pri $i$-tem opažanju. Opazimo, da je
-\[S = \sum_{i=1}^N K_i.\]
-Če predpostavimo, da so spremenljivke $K_1, K_2, \ldots, K_N$ med sabo neodvisne, 
-je slučajna spremenljivka $S$ porazdeljena negativno binomsko $\NegBin(N,p)$.
-Računamo.
-\[E(\hat{p}) = E(\frac{N}{S}) = \sum_{k=N}^{\infty} \frac{N}{k} \binom{k-1}{N-1}p^N(1-p)^{N-k}\]  
+Izračunajmo pričakovano vrednost naše cenilke.
+Opazimo, da je slučajna spremenljivka $S = \sum_{i=1}^N K_i$ vsota $N$ neodvisnih spremenljivk s porazdelitvijo $\Geom(p)$.
+Slučajna spremenljivka $S$ je torej porazdeljena negativno binomsko $\NegBin(N,p)$.
+Zato velja
+\[E(\hat{p}) = E\left(\frac{N}{S}\right) = \sum_{k=N}^{\infty} \frac{N}{k} \binom{k-1}{N-1}p^N(1-p)^{k-N}.\]
+Ta izraz je mogoče izraziti kot vsota racionalne in logaritemske funkcije, vendar to tu izpostimo. 
+Zaplete se predvsem zaradi faktorja $\frac{1}{k}$. 
+Zato si raje poglejmo, kaj je pričakovana vrednost slučajne spremenljivke $\frac{1}{S-1}$. 
 
+\begin{align*}
+E\left(\frac{1}{S-1}\right) &= \sum_{k=N}^{\infty} \frac{1}{k-1} \binom{k-1}{N-1}p^N(1-p)^{k-N} \\
+    &= \sum_{k=N}^{\infty} \frac{1}{N-1} \binom{k-2}{N-2}p^N(1-p)^{k-N} \\
+    &= \frac{p^N}{N-1} \sum_{k=N}^{\infty} \binom{k-2}{k-N}(1-p)^{k-N} \\
+    &= \frac{p^N}{N-1} \sum_{k=N}^{\infty} \binom{-N+1}{k-N}(-1)^{k-N}(1-p)^{k-N} \\
+    &= \frac{p^N}{N-1} \sum_{k=0}^{\infty} \binom{-N+1}{k}(-1)^k(1-p)^k \\
+    &= \frac{p^N}{N-1} p^{-N+1} = \frac{p}{N-1}
+\end{align*}
 
+Za novo cenilko parametra $p$ izberemo $\tilde{p} = \frac{P-1}{S-1}$. 
+Zgornji izračun pokaže, da je to res nepristranska cenilka.
+V našem primeru znaša
+\[\tilde{p} = \frac{129}{362} \approx 0,356.\]
+S pomočjo programa \textbf{naloga2.py} ponovno izračunamo pričakovane frekvence. 
+Na sliko~\ref{crtni_graf1} dorišemo še črtni grafikon novih frekvenc in tako dobimo sliko~\ref{crtni_graf2}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Črtni_grafikon2.png}
+    \caption{Črtni grafikon opaženih ter pričakovanih frekvenc s pristransko in nepristransko cenilko.}
+    \label{crtni_graf2}
+\end{figure}
+\noindent Opazimo da se črtna grafikona prvotne in nepristranske cenilke skoraj popolnoma ujemata.
 
 
 
@@ -234,7 +271,10 @@ Testiramo ničelno hipotezo
 proti enostranski alternativni hipotezi
 \[H_1: \mu_X > \mu_Y.\]
 V ta namen opravimo T-test na testni statistiki
-\[T = \frac{\bar{X}-\bar{Y}}{s_p \sqrt{\frac{1}{n}+\frac{1}{m}}}.\]
+\[T = \frac{\bar{X}-\bar{Y}}{s_p \sqrt{\frac{1}{n}+\frac{1}{m}}},\]
+kjer je 
+\[s_p^2 = \frac{n\sigma^2_X + m\sigma^2_Y}{n+m-2},\]
+$\sigma_X^2$ in $\sigma_Y^2$ pa sta vzorčni varianci skupin.
 Program \textbf{naloga3.py} vrne, da statistika $T$ znaša $19{,}29739$ in ima $107$ prostorskih stopenj.
 Iz tabel razberemo, da znašata 
 \[F^{-1}_{\Student(60)}(0.05) = 1{,}671 \quad \text{in} \quad F^{-1}_{\Student(60)}(0.01) = 2{,}390.\]
@@ -247,7 +287,7 @@ Zanesljivo lahko trdimo, da obremenitev vpliva na spremembo pulza.
 \subsection*{Primer (b)}
 
 Za spremembe pulzov študentov, ki so bili določeni za obremenitev, narišemo histogram, ki je prikazan na sliki~\ref{histogram_studenti}.
-Širine stolpcov so določene v skladu z modificiranem Freedman-Diaconisovem pravilu in znaša $20{,}499$.
+Širine stolpcov so določene v skladu z modificiranem Freedman-Diaconisovem pravilu in znašajo $20{,}499$.
 
 \begin{figure}[H]
     \centering
@@ -262,11 +302,11 @@ Zdi se, da je res nekaj študentov goljufalo.
 
 \subsection*{Primer (c)}
 
-Vseh $N$ študente, ki so bili deležni obremenitve, razdelimo v $k=3$ skupine, glede na njihovo vadbo. 
+Vseh $N$ študentov, ki so bili deležni obremenitve, glede na njihovo vadbo razdelimo v $k=3$ skupine. 
 Z $X_{ij}$ označimo spremembo pulza $j$-tega študenta $i$-te skupine.
 Predpostavimo model 
 \[X_{ij} = \mu + \alpha_i + \epsilon_{ij},\]
-kjer je $\mu$ pričakovana vrednost vseh meritev, $\alpha_i$ odstopanje od pričakovane vresnosti $i$-te skupine in $\epsilon_{ij}$ šum, 
+kjer je $\mu$ pričakovana vrednost vseh meritev, $\alpha_i$ odstopanje od pričakovane vrednosti $i$-te skupine in $\epsilon_{ij}$ šum, 
 za katere pa predpostavimo, da so med sabo neodvisni in porazdeljeni normalno $\N(0, \sigma^2)$.
 
 Testiramo ničelno hipotezo
