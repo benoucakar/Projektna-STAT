@@ -17,6 +17,9 @@
 \DeclareMathOperator{\var}{var}
 \DeclareMathOperator{\Geom}{Geom}
 \DeclareMathOperator{\NegBin}{NegBin}
+\DeclareMathOperator{\Student}{Student}
+\DeclareMathOperator{\Fisher}{Fisher}
+\DeclareMathOperator{\N}{N}
 \DeclareMathOperator{\Lver}{L}
 \DeclareMathOperator{\lver}{l}
 
@@ -40,9 +43,12 @@
 
 Nalogo rešujemo s pomočjo programa \textbf{naloga1.py}. 
 Ta generira škatle z brki in za zadnji del naloge vrne:
-
 \begin{verbatim}
-    Izhod
+    S četrtmi pojasnjena varianca dohodka družin Kibergrada
+    znaša 9252923, residualna varianca pa znaša 1017132747.
+    Pojasnjeni standardni odklon dohodka med četrtmi znaša 3042.
+    Povprečni dohodki znaša 45759 v severni, 41235 v vzhodni,
+    37473 v južni in 42158 v zahodni četrti.
 \end{verbatim}
 
 Preučevali bomo skupni dohodek družin v mestu Kibergrad.
@@ -56,7 +62,7 @@ Na podlagi teh vzorcev narišemo škatle z brki za dohodke po četrtih, ki so pr
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{Skatle_z_brki_Cetrti.png}
+    \includegraphics[scale=0.5]{Skatle_z_brki_Cetrti.png}
     \caption{Škatle z brki za dohodke po četrtih.}
     \label{brke_po_cetrtih}
 \end{figure}
@@ -80,7 +86,7 @@ Tudi za te vzorce narišemo škatle z brki prikazane na sliki~\ref{brke_sever}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{Skatle_z_brki_Sever.png}
+    \includegraphics[scale=0.5]{Skatle_z_brki_Sever.png}
     \caption{Škatle z brki za dohodke v severni četrti.}
     \label{brke_sever}
 \end{figure}
@@ -91,14 +97,16 @@ Nasploh opazimo nekoliko več variacije med premožnejšimi prebivalci severne �
 
 \subsection*{Primer (c)}
 
-Naj bo $N$ velikost populacije Kibergrada, $N_i$ velikost populacije $i$-te četrti in $w_i = N_i/N$ velikostni deleži četrti.
+Naj bo $N$ velikost populacije Kibergrada, $N_i$ velikost populacije $i$-te četrti in $w_i = \frac{N_i}{N}$ velikostni deleži četrti.
 Nadaljnje naj bo $\mu_i$ povprečni dohodek in $\sigma_i^2$ varianca dohodka $i$-te četrti,
 $\mu$ povprečni dohodek in $\sigma^2$ varianca dohodka celotne populacije ter $\sigma^2_p$ in $\sigma^2_n$ pojasnjena in nepojasnjena varianca celotne populacije.
 Pojasnjeno in nepojasnjeno varianco pri stratificiranem vzorčenju lahko izrazimo kot
 \[\sigma^2_p = \sum_{i=1}^4 w_i \mu_i^2 - \mu^2 \qquad \sigma^2_n = \sum_{i=1}^4 w_i \sigma_i^2.\]
 
-Programa \textbf{naloga1.py} vrne, da pojasnjena varianca znaša, nepojasnjena varianca pa.
-Nizka pojasnjena varianca potrjuje hipotezo, da je razlika povprečnega dohodka družine med četrtmi majhna. 
+Programa \textbf{naloga1.py} vrne, da pojasnjena varianca znaša $9.252.923$, nepojasnjena varianca pa znaša $1.017.132.747$.
+Pojasnjeni standardni odklon dohodka med četrtmi znaša $3.042$, kar je malo v primerjavi s povprečnimi dohodki četrti,
+ki znšajo $45.759$ v severni, $41.235$ v vzhodni, $37.473$ v južni in $42.158$ v zahodni četrti.
+To potrjuje hipotezo, da je razlika povprečnega dohodka družine med četrtmi majhna.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - 2. naloga - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -119,20 +127,19 @@ Podatke z novimi oznakami predstavimo v spodnji tabeli.
     \caption{Frekvence števila skokov}
     \label{freq}
 \end{table}
-Skupno število opaženih skokov označimo z $S$, število vseh opažanj pa z $N$.
+\noindent Skupno število opaženih skokov označimo z $S$, število vseh opažanj pa z $N$.
 Velja
 \[N = \sum_{k=1}^{12} S_k \qquad S = \sum_{k=1}^{12} k S_k.\]
 V našem primeru znaša $N = 130$ in $S = 363$.
 
 Želimo poiskati geometrijsko porazdelitev, ki se najbolje prilega tem podatkom. 
 Če je število skokov pri posameznem opažanju slučajna spremenljivka $K \sim \Geom(p)$, 
-v resnici iščemo cenilko za parameter $p$.
-To znamo narediti na vsaj dva načina.
+iščemo cenilko za parameter $p$. To znamo narediti na vsaj dva načina.
 
 \emph{Prvi način:} Postopamo po metodi momentov. 
 Spomnimo se, da pričakovana vrednost geometrijske porazdelitve $\Geom(p)$ znaša $\frac{1}{p}$.
 Zato velja
-\[p = \frac{1}{E(K)}.\]
+\[p = \frac{1}{\E(K)}.\]
 Po metodi momentov $\E(K)$ ocenimo s prvim momentom opaženih vrednosti 
 \[\frac{1}{N} \sum_{k=1}^{12} k S_k = \frac{S}{N},\]
 kar nam da cenilko
@@ -141,15 +148,15 @@ kar nam da cenilko
 \emph{Drugi način:} Postopamo po metodi največjega verjetja.
 Verjetnostna funkcija geometrijske porazdelitve $\Geom(p)$ je $\PP(K=k) = p(1-p)^{k-1}$.
 Verjetje lahko torej izrazimo kot 
-\[\Lver(p \mid S1, \ldots, S_{12}) = p^N (1-p)^{S - N}.\]
+\[\Lver(p \mid S_1, \ldots, S_{12}) = p^N (1-p)^{S - N}.\]
 Ko logaritmiramo, dobimo 
-\[\lver(p \mid S1, \ldots, S_{12}) = N \ln(\frac{p}{1-p}) + S \ln(1-p).\]
+\[\lver(p \mid S_1, \ldots, S_{12}) = N \ln(\frac{p}{1-p}) + S \ln(1-p).\]
 Če parcialno odvajamo po $p$ in malo računamo, ponovno pridemo do cenilke
 \[\hat{p} = \frac{N}{S}.\]
 
 V obeh primerih pridemo do iste cenilke.
 Ta v našem primeru znaša 
-\[\hat{p} = \frac{130}{363} \approx 0.358.\]
+\[\hat{p} = \frac{130}{363} \approx 0,358.\]
 Teorija metode momentov in metode največjega verjetja nam zagotovita, da je ta izbira smiselna.
 Iskana geometrijska porazdelitev je $\Geom(\hat{p})$.
 
@@ -164,11 +171,11 @@ Dobimo spodnjo tabelo.
     \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
     $k$ & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
-    $p_k$ & 0.3580 & 0.2298 & 0.1476 & 0.0947 & 0.0608 & 0.0390  \\ \hline
-    $\hat{S}_k$ & 46.54 & 29.87 & 19.19 & 12.31 & 7.90 & 5.07 \\ \hline
+    $p_k$ & 0,3580 & 0,2298 & 0,1476 & 0,0947 & 0,0608 & 0,0390  \\ \hline
+    $\hat{S}_k$ & 46,54 & 29,87 & 19,19 & 12,31 & 7,90 & 5,07 \\ \hline
     $k$ & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline
-    $p_k$ & 0.0251 & 0.0161 & 0.0103 & 0.0066 & 0.0043 & 0.0027 \\ \hline
-    $\hat{S}_k$ & 3.26 & 2.09 & 1.34 & 0.86 & 0.56 & 0.35 \\ \hline
+    $p_k$ & 0,0251 & 0,0161 & 0,0103 & 0,0066 & 0,0043 & 0,0027 \\ \hline
+    $\hat{S}_k$ & 3,26 & 2,09 & 1,34 & 0,86 & 0,56 & 0,35 \\ \hline
 \end{tabular}
 \caption{Pričakovane frekvence skokov.}
 \label{PricakovaneFreq}
@@ -196,5 +203,87 @@ Računamo.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - 3. naloga - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{3. naloga}
+
+Nalogo rešujemo s pomočjo programa \textbf{naloga3.py}. 
+Ta generira histogram in vrne naslednje podatke:
+\begin{verbatim}
+    Studentova statistika znaša 19.29739 in ima 
+    107 prostorskih stopenj.
+    Širina stolpcev po modificiranem Freedman-Diaconisovem
+    pravilu znaša 20.499.
+    Studentova statistika znaša 0.09837 in ima 
+    (2, 43) prostorskih stopenj.
+\end{verbatim}
+
+Naj bo $P^1_i$ prvi in $P^2_i$ drugi izmerjen pulz $i$-tega študenta.
+Za vsakega študenta izračunamo spremembo pulza $\Delta P_i = P^2_i - P^1_i$.
+To statistiko bomo obravnavali v nadaljevanju.
+
+\subsection*{Primer (a)}
+
+Študente razdelimo v dve skupini glede na to ali so bili med meritvama pulzov deležni obremenitve ali ne.
+Za $i = 1, \ldots, n$ spremembo pulza $i$-tega študenta, ki je bil deležen obremenitve, označimo z $X_i$. 
+Podobno za $j = 1, \ldots, m$ spremembo pulza $j$-tega študenta, ki ni bil deležen obremenitve, označimo z $Y_j$.
+Predpostavimo, da so razlike pulzov $X_i$ porazdeljene normalno s porazdelitvijo $\N(\mu_X, \sigma^2)$, 
+razlike pulzov $Y_j$ pa normalno s porazdelitvijo $\N(\mu_Y, \sigma^2)$.
+
+Testiramo ničelno hipotezo
+\[H_0: \mu_X = \mu_Y\]
+proti enostranski alternativni hipotezi
+\[H_1: \mu_X > \mu_Y.\]
+V ta namen opravimo T-test na testni statistiki
+\[T = \frac{\bar{X}-\bar{Y}}{s_p \sqrt{\frac{1}{n}+\frac{1}{m}}}.\]
+Program \textbf{naloga3.py} vrne, da statistika $T$ znaša $19{,}29739$ in ima $107$ prostorskih stopenj.
+Iz tabel razberemo, da znašata 
+\[F^{-1}_{\Student(60)}(0.05) = 1{,}671 \quad \text{in} \quad F^{-1}_{\Student(60)}(0.01) = 2{,}390.\]
+Ker funkcija $F^{-1}_{\Student(k)}$ pada v odvisnosti od parametra $k$, velja
+\[T > F^{-1}_{\Student(107)}(0.05) \quad \text{in} \quad T > F^{-1}_{\Student(107)}(0.01).\]
+
+Ničelno hipotezo zavrnemo pri stopnji tveganja $0{,}05$ in $0{,}01$.
+Zanesljivo lahko trdimo, da obremenitev vpliva na spremembo pulza.
+
+\subsection*{Primer (b)}
+
+Za spremembe pulzov študentov, ki so bili določeni za obremenitev, narišemo histogram, ki je prikazan na sliki~\ref{histogram_studenti}.
+Širine stolpcov so določene v skladu z modificiranem Freedman-Diaconisovem pravilu in znaša $20{,}499$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Histogram.png}
+    \caption{Histogram spremembe pulzov pri študentih, ki so bili določeni za obremenitev.}
+    \label{histogram_studenti}
+\end{figure}
+
+Po predpostavki, naj bi bile spremembe pulzov pri študentih, ki so bili določeni za obremenitev, normalno porazdeljene.
+Iz zgornjega histograma pa je razvidno, da je nekoliko več študentov imelo spremembo pulza pod $30$, kot pa bi pričakovali od normalne porazdelitve.
+Zdi se, da je res nekaj študentov goljufalo.
+
+\subsection*{Primer (c)}
+
+Vseh $N$ študente, ki so bili deležni obremenitve, razdelimo v $k=3$ skupine, glede na njihovo vadbo. 
+Z $X_{ij}$ označimo spremembo pulza $j$-tega študenta $i$-te skupine.
+Predpostavimo model 
+\[X_{ij} = \mu + \alpha_i + \epsilon_{ij},\]
+kjer je $\mu$ pričakovana vrednost vseh meritev, $\alpha_i$ odstopanje od pričakovane vresnosti $i$-te skupine in $\epsilon_{ij}$ šum, 
+za katere pa predpostavimo, da so med sabo neodvisni in porazdeljeni normalno $\N(0, \sigma^2)$.
+
+Testiramo ničelno hipotezo
+\[H_0: \alpha_1 = \alpha_2 = \alpha_3 = 0\]
+proti alternativni hipotezi
+\[H_1: \text{Niso vsi } \alpha_i = 0.\]
+V ta namen opravimo ANOVA F-test na statistiki
+\[F = \frac{\dfrac{SS_B}{k-1}}{\dfrac{SS_W}{N-k}},\]
+kjer je 
+\[SS_B = \sum_{i=1}^k N_i(\bar{X}_i - \bar{X})^2 \quad \text{in} \quad \sum_{i=1}^k \sum_{j=1}^{N_i}(X_{ij}-\bar{X}_i)^2.\]
+Tu smo z $N_i$ označili velikost $i$-te skupine, z $\bar{X}_i$ vzorčno povprečje $i$-te skupine in z $\bar{X}$ vzorčno povprečje vseh meritev.
+Program \textbf{naloga3.py} vrne, da statistika $F$ znaša $0,09837$ in ima $(2, 43)$ prostorskih stopenj.
+Iz tabel razberemo, da znašata 
+\[F^{-1}_{\Fisher(2, 60)}(0.05) = 3{,}15 \quad \text{in} \quad F^{-1}_{\Fisher(2, 60)}(0.01) = 4{,}98.\]
+Ker funkcija $F^{-1}_{\Fisher(2, k)}$ pada v odvisnosti od parametra $k$, velja
+\[F < F^{-1}_{\Fisher(2, 43)}(0.05) \quad \text{in} \quad F < F^{-1}_{\Fisher(2, 43)}(0.01).\]
+Tako ne moremo niti pri stopnji tveganja $0{,}05$ niti pri $0{,}01$ zavrniti ničelne hipoteze.
+Nimamo dovolj podatkov, da bi lahko trdili, da vadba vpliva na spremembo pulza.
 
 \end{document}

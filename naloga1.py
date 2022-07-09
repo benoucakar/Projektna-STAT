@@ -87,6 +87,9 @@ mui = [np.mean(list(map(int, list(cetrt.DOHODEK)))) for cetrt in cetrti]
 mu = sum(wi[i]*mui[i] for i in range(4))
 vari = [np.var(list(map(int, list(cetrt.DOHODEK)))) for cetrt in cetrti]
 
-poj_var = sum([wi[i]*(mui[i] - mu)**2 for i in range(4)]) # 9252922.604388494
-nepoj_var = sum([wi[i]*vari[i] for i in range(4)]) # 1017132747.285994
+poj_var = round(sum([wi[i]*(mui[i] - mu)**2 for i in range(4)])) # 9252923
+nepoj_var = round(sum([wi[i]*vari[i] for i in range(4)])) # 1017132747
 
+print(f"S četrtmi pojasnjena varianca dohodka družin Kibergrada znaša {poj_var},\nresidualna varianca pa znaša {nepoj_var}.")
+print(f"Pojasnjeni standardni odklon dohodka med četrtmi znaša {round(poj_var**0.5)}.")
+print(f"Povprečni dohodki znaša {round(mui[0])} v severni, {round(mui[1])} v vzhodni,\n{round(mui[2])} v južni in {round(mui[3])} v zahodni četrti.")

@@ -347,6 +347,15 @@ INPUT .\Slike\\Črtni_grafikon.png
 INPUT .\Slike\\Črtni_grafikon.png
 INPUT .\Slike\\Črtni_grafikon.png
 INPUT .\Slike\\Črtni_grafikon.png
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr6.tfm
+INPUT .\Slike\\Histogram.png
+INPUT .\Slike\\Histogram.png
+INPUT Slike\\Histogram.png
+INPUT .\Slike\\Histogram.png
+INPUT .\Slike\\Histogram.png
+INPUT .\Slike\\Histogram.png
+INPUT .\Slike\\Histogram.png
 INPUT Projektna_STAT.aux
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
@@ -361,6 +370,8 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmex10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmex10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi6.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmmi8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
