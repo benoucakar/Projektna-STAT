@@ -91,7 +91,7 @@ Tudi za te vzorce narišemo škatle z brki prikazane na sliki~\ref{brke_sever}.
     \label{brke_sever}
 \end{figure}
 
-Mediane vseh škatel ležijo nad $40.000$, tako da sklepamo da večina dohodkov znaša več kot to.
+Mediane vseh škatel ležijo nad $40.000$, tako da sklepamo da večina dohodkov znaša več kot toliko.
 Dohodki osamelcev znašaja v povprečju $150.000$.
 Nasploh opazimo nekoliko več variacije med premožnejšimi prebivalci severne četriti.
 
@@ -143,29 +143,19 @@ V našem primeru znaša $N = 130$ in $S = 363$.
 
 Želimo poiskati geometrijsko porazdelitev, ki se najbolje prilega tem podatkom. 
 Naj bo število skokov pri $i$-tem opažanju slučajna spremenljivka $K_i \sim \Geom(p)$
-in predpostavimo, da so spremenljivke $K_i$ med sabo neodvisne.
-Iščemo cenilko za parameter $p$. To znamo narediti na vsaj dva načina.
+in predpostavimo, da so spremenljivke $K_i$ med sabo neodvisne. Iščemo cenilko za parameter $p$. 
+Dikcija \emph{se nejbolje prilega} nam namigne, da iščemo cenilko po metodi največjega verjetja.
 
-\emph{Prvi način:} Postopamo po metodi momentov. 
-Spomnimo se, da pričakovana vrednost geometrijske porazdelitve $\Geom(p)$ znaša $\frac{1}{p}$.
-Zato velja
-\[p = \frac{1}{\E(K)}.\]
-Po metodi momentov ocenimo $\E(K)$ s prvim momentom opaženih vrednosti 
-\[\frac{1}{N} \sum_{k=1}^{12} k S_k = \frac{S}{N},\]
-kar nam da cenilko
-\[\hat{p} = \frac{N}{S}.\]
-
-\emph{Drugi način:} Postopamo po metodi največjega verjetja.
-Verjetnostna funkcija geometrijske porazdelitve $\Geom(p)$ je $\PP(K=k) = p(1-p)^{k-1}$.
+Verjetnostna funkcija geometrijske porazdelitve $\Geom(p)$ je 
+\[\PP(K=k) = p(1-p)^{k-1}.\]
 Verjetje lahko torej izrazimo kot 
 \[\Lver(p \mid K_1, \ldots, K_N) = p^N (1-p)^{S - N}.\]
 Ko logaritmiramo, dobimo 
 \[\lver(p \mid K_1, \ldots, K_N) = N \ln(p) + (S-N) \ln(1-p).\]
-Če izraz odvajamo po $p$, enačimo z $0$ in malo računamo, ponovno pridemo do cenilke
+Če izraz odvajamo po $p$, enačimo z $0$ in malo računamo, pridemo do cenilke
 \[\hat{p} = \frac{N}{S}.\]
-
-V obeh primerih pridemo do iste cenilke.
-Ta v našem primeru znaša 
+Omenimo še, da bi isto cenilko dobili, če bi postopali po metodi momentov.
+V našem primeru ta cenilka znaša 
 \[\hat{p} = \frac{130}{363} \approx 0,358.\]
 Iskana geometrijska porazdelitev je $\Geom(\hat{p})$.
 
@@ -199,30 +189,30 @@ Dobimo spodnjo tabelo.
     \label{crtni_graf1}
 \end{figure}
 
-Zdi se, da se pričakovane frekvence se dobro prilegajo opaženim. Ponekod pride do odstopanja, 
+Zdi se, da se pričakovane frekvence dobro prilegajo opaženim. Ponekod pride do odstopanja, 
 ki pa je lahko posledica dejstva, da pričakovane frekvence $\hat{S}_k$ niso cela števila.
 
 \subsection*{Primer (c)}
 
-Izračunajmo pričakovano vrednost naše cenilke.
-Opazimo, da je slučajna spremenljivka $S = \sum_{i=1}^N K_i$ vsota $N$ neodvisnih spremenljivk s porazdelitvijo $\Geom(p)$.
-Slučajna spremenljivka $S$ je torej porazdeljena negativno binomsko $\NegBin(N,p)$.
-Zato velja
-\[E(\hat{p}) = E\left(\frac{N}{S}\right) = \sum_{k=N}^{\infty} \frac{N}{k} \binom{k-1}{N-1}p^N(1-p)^{k-N}.\]
-Ta izraz je mogoče izraziti kot vsota racionalne in logaritemske funkcije, vendar to tu izpostimo. 
-Zaplete se predvsem zaradi faktorja $\frac{1}{k}$. 
-Zato si raje poglejmo, kaj je pričakovana vrednost slučajne spremenljivke $\frac{1}{S-1}$. 
+Opazimo, da je slučajna spremenljivka $S = \sum_{i=1}^N K_i$ vsota $N$ neodvisnih spremenljivk s porazdelitvijo $\Geom(p)$ 
+in je zato porazdeljena negativno binomsko $\NegBin(N,p)$.
+Pričakovano vrednost cenilke $\hat{p}$ lahko torej zapišemo kot
+\[\E(\hat{p}) = \E\left(\frac{N}{S}\right) = \sum_{k=N}^{\infty} \frac{N}{k} \binom{k-1}{N-1}p^N(1-p)^{k-N}.\]
+Ta izraz je mogoče zapisati kot vsota racionalne in logaritemske funkcije parametra $p$, vsekakor pa cenilka ni nepristranska.
+Točno izražavo tu izpostimo, omenimo pa, da se zaplete predvsem zaradi faktorja $\frac{1}{k}$. 
+
+Raje poglejmo, kaj je pričakovana vrednost slučajne spremenljivke $\frac{1}{S-1}$. 
 
 \begin{align*}
-E\left(\frac{1}{S-1}\right) &= \sum_{k=N}^{\infty} \frac{1}{k-1} \binom{k-1}{N-1}p^N(1-p)^{k-N} \\
+\E\left(\frac{1}{S-1}\right) &= \sum_{k=N}^{\infty} \frac{1}{k-1} \binom{k-1}{N-1}p^N(1-p)^{k-N} \\
     &= \sum_{k=N}^{\infty} \frac{1}{N-1} \binom{k-2}{N-2}p^N(1-p)^{k-N} \\
     &= \frac{p^N}{N-1} \sum_{k=N}^{\infty} \binom{k-2}{k-N}(1-p)^{k-N} \\
     &= \frac{p^N}{N-1} \sum_{k=N}^{\infty} \binom{-N+1}{k-N}(-1)^{k-N}(1-p)^{k-N} \\
     &= \frac{p^N}{N-1} \sum_{k=0}^{\infty} \binom{-N+1}{k}(-1)^k(1-p)^k \\
     &= \frac{p^N}{N-1} p^{-N+1} = \frac{p}{N-1}
 \end{align*}
-
-Za novo cenilko parametra $p$ izberemo $\tilde{p} = \frac{P-1}{S-1}$. 
+Za novo cenilko parametra $p$ izberemo
+\[\tilde{p} = \frac{N-1}{S-1}.\] 
 Zgornji izračun pokaže, da je to res nepristranska cenilka.
 V našem primeru znaša
 \[\tilde{p} = \frac{129}{362} \approx 0,356.\]
@@ -316,7 +306,7 @@ proti alternativni hipotezi
 V ta namen opravimo ANOVA F-test na statistiki
 \[F = \frac{\dfrac{SS_B}{k-1}}{\dfrac{SS_W}{N-k}},\]
 kjer je 
-\[SS_B = \sum_{i=1}^k N_i(\bar{X}_i - \bar{X})^2 \quad \text{in} \quad \sum_{i=1}^k \sum_{j=1}^{N_i}(X_{ij}-\bar{X}_i)^2.\]
+\[SS_B = \sum_{i=1}^k N_i(\bar{X}_i - \bar{X})^2 \quad \text{in} \quad SS_W = \sum_{i=1}^k \sum_{j=1}^{N_i}(X_{ij}-\bar{X}_i)^2.\]
 Tu smo z $N_i$ označili velikost $i$-te skupine, z $\bar{X}_i$ vzorčno povprečje $i$-te skupine in z $\bar{X}$ vzorčno povprečje vseh meritev.
 Program \textbf{naloga3.py} vrne, da statistika $F$ znaša $0,09837$ in ima $(2, 43)$ prostorskih stopenj.
 Iz tabel razberemo, da znašata 
